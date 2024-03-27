@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+:root {
+  --main-color: #fd052f;
+  --body-color: #020202;
+  --text-primary-color: #fff;
+  --hover-color: #252323;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-color);
+  height: auto;
+  width: 100%;
+}
+.background-1 {
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-1.png");
+}
+.background-2 {
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+  background-attachment: fixed;
+}
+.background-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-3.png");
+}
+.cta {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #fd052e53, #fd052e75, #fd052f);
+  color: var(--text-primary-color);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.btn span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn:hover {
+  background: #fff;
+  color: var(--main-color);
+}
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::selection {
+  background-color: var(--main-color);
+}
+/* ANIMAÇÂO LOGIN */
+
+.loader {
+
+  
+  transform: translate(-13%);
+ 
+ 
+}
+
+.loader span{
+ position: absolute;
+ color: #fff;
+ transform: translate(100%);
+ font-size: 60px;
+ letter-spacing: 5px;
+ 
+ padding: 20px 0;
+}
+
+.loader span:nth-child(1) {
+ color: transparent;
+ -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+}
+
+.loader span:nth-child(2) {
+ color: rgb(128, 198, 255);
+ -webkit-text-stroke: 1px rgb(128, 198, 255);
+ animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+ 0%, 100% {
+   clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+    54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+ }
+
+ 50% {
+   clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+    51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+ }
+}
+.inicio{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 11.08.14_cda1635e.jpg");
+}
+
+.inicio2{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 13.37.38_2b6ab4fe.jpg");
+}
+
+.inicio3{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio4{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 14.15.28_b151cce4.jpg" );
+}
+
+.inicio5{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio6{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 16.27.22_80228dec.jpg" );
+}
+
+.inicio7{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio8{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 17.54.03_c4b222e9.jpg");
+}
+
+.inicio9{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio10{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 17.56.14_a142dd52.jpg" );
+}
+
+.inicio11{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio12{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
+
+.inicio13{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/Imagem\ do\ WhatsApp\ de\ 2024-03-26\ à\(s\)\ 18.26.31_72f64869.jpg" );
+}
+
+.inicio14{
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url("../img/background-2.png");
+}
